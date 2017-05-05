@@ -2,6 +2,10 @@
 
 这是一个关于ES监控的zabbix的脚本.
 
+**预览**
+
+![item show on zabbix web site](es_zabbix_view.png)
+
 **特性**
 
 1. 这个监控脚本是使用bash编写的.
@@ -10,6 +14,7 @@
 就算以后调整了集群节点也不需要再重新配置监控.
 
 **依赖环境**
+
 - Linux
 - zabbix3
 - bash
@@ -25,13 +30,10 @@
 5. 在zabbix web中添加 "Elasticsearch Cluster" 模板到配置监控脚本的节点.
 6. 重启监控节点的zabbix agentd 搞定.
 
-**View**
+# 关于
 
-![item show on zabbix web site](es_zabbix_view.png)
-
-# About
-
-Author: vastxiao.github.io
-Date: 2017.04.11
-Update: 2017.05.05
+* Author: vastxiao.github.io
+* Date: 2017.04.11
+* Update: 2017.05.05
+* Repo: https://github.com/Vastxiao/zabbixMonitorES
 
