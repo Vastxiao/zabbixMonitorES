@@ -16,13 +16,8 @@
 4. Config es\_env.sh and restart zabbix agentd process.
 5. finaly, add the "Elasticsearch Cluster" to the host which should be monitor.
 
-**View**
-
-![item show on zabbix web site](es_zabbix_view.png)
 
 # About
 
 Author: vastxiao.github.io
 Date: 2017.04.11
-Update: 2017.05.03
-
