@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>3.2</version>
-    <date>2017-04-14T05:36:14Z</date>
+    <version>3.4</version>
+    <date>2019-06-27T08:04:56Z</date>
     <groups>
         <group>
-            <name>统计平台</name>
+            <name>Templates</name>
         </group>
     </groups>
     <templates>
@@ -14,7 +14,7 @@
             <description/>
             <groups>
                 <group>
-                    <name>统计平台</name>
+                    <name>Templates</name>
                 </group>
             </groups>
             <applications>
@@ -27,17 +27,15 @@
                     <name>cluster active shards percent</name>
                     <type>7</type>
                     <snmp_community/>
-                    <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>es_cluster_health[active_shards_percent]</key>
-                    <delay>60</delay>
-                    <history>90</history>
+                    <delay>1m</delay>
+                    <history>90d</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -45,11 +43,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -65,22 +60,23 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <master_item/>
                 </item>
                 <item>
                     <name>cluster name</name>
                     <type>7</type>
                     <snmp_community/>
-                    <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>es_cluster_health[cluster]</key>
-                    <delay>3600</delay>
-                    <history>7</history>
+                    <delay>1h</delay>
+                    <history>1w</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -88,11 +84,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -108,22 +101,23 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <master_item/>
                 </item>
                 <item>
                     <name>cluster initializing shards</name>
                     <type>7</type>
                     <snmp_community/>
-                    <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>es_cluster_health[init]</key>
-                    <delay>60</delay>
-                    <history>90</history>
-                    <trends>365</trends>
+                    <delay>1m</delay>
+                    <history>90d</history>
+                    <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -131,11 +125,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -151,22 +142,23 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <master_item/>
                 </item>
                 <item>
                     <name>cluster pending tasks cout</name>
                     <type>7</type>
                     <snmp_community/>
-                    <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>es_cluster_health[pending_tasks]</key>
-                    <delay>60</delay>
-                    <history>7</history>
-                    <trends>7</trends>
+                    <delay>1m</delay>
+                    <history>1w</history>
+                    <trends>1w</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -174,11 +166,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -194,22 +183,23 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <master_item/>
                 </item>
                 <item>
                     <name>cluster health status</name>
                     <type>7</type>
                     <snmp_community/>
-                    <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>es_cluster_health[status]</key>
-                    <delay>60</delay>
-                    <history>90</history>
+                    <delay>1m</delay>
+                    <history>90d</history>
                     <trends>0</trends>
                     <status>0</status>
                     <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -217,11 +207,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -237,22 +224,23 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <master_item/>
                 </item>
                 <item>
                     <name>cluster unassigned shards</name>
                     <type>7</type>
                     <snmp_community/>
-                    <multiplier>0</multiplier>
                     <snmp_oid/>
                     <key>es_cluster_health[unassign]</key>
-                    <delay>120</delay>
-                    <history>7</history>
-                    <trends>7</trends>
+                    <delay>2m</delay>
+                    <history>1w</history>
+                    <trends>1w</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -260,11 +248,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -280,6 +265,9 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <master_item/>
                 </item>
             </items>
             <discovery_rules>
@@ -289,7 +277,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>es_indices_discovery</key>
-                    <delay>1200</delay>
+                    <delay>20m</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
@@ -299,7 +287,6 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -313,24 +300,22 @@
                         <formula/>
                         <conditions/>
                     </filter>
-                    <lifetime>1</lifetime>
+                    <lifetime>1d</lifetime>
                     <description>自动发现ES的索引项目。</description>
                     <item_prototypes>
                         <item_prototype>
-                            <name>ES index {#NAME} : document count</name>
+                            <name>ES index {#INDICESNAME} : document count</name>
                             <type>7</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
                             <snmp_oid/>
-                            <key>es_index_monitor[count,{#NAME}]</key>
-                            <delay>300</delay>
-                            <history>90</history>
-                            <trends>365</trends>
+                            <key>es_index_monitor[count,{#INDICESNAME}]</key>
+                            <delay>5m</delay>
+                            <history>90d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -338,11 +323,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -352,19 +334,26 @@
                             <description>统计某个索引项目的document count值。&#13;
 当logstash正常向索引写入数据时，doc数不断增加。用于监控该索引是否一直有数据在写入es。</description>
                             <inventory_link>0</inventory_link>
-                            <applications/>
+                            <applications>
+                                <application>
+                                    <name>Elasticsearch Cluster status</name>
+                                </application>
+                            </applications>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
                             <application_prototypes>
                                 <application_prototype>
                                     <name>Elasticsearch Indices doc count</name>
                                 </application_prototype>
                             </application_prototypes>
+                            <master_item_prototype/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Elasticsearch Cluster:es_index_monitor[count,{#NAME}].change()}=0</expression>
+                            <expression>{Elasticsearch Cluster:es_index_monitor[count,{#INDICESNAME}].change()}=0</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>ES index {#NAME} 无新数据写入,doc:{ITEM.LASTVALUE}</name>
@@ -383,6 +372,7 @@
                     </trigger_prototypes>
                     <graph_prototypes/>
                     <host_prototypes/>
+                    <jmx_endpoint/>
                 </discovery_rule>
                 <discovery_rule>
                     <name>elasticsearch_nodes_discovery</name>
@@ -390,7 +380,7 @@
                     <snmp_community/>
                     <snmp_oid/>
                     <key>es_nodes_discovery</key>
-                    <delay>3600</delay>
+                    <delay>1h</delay>
                     <status>0</status>
                     <allowed_hosts/>
                     <snmpv3_contextname/>
@@ -400,7 +390,6 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -414,24 +403,22 @@
                         <formula/>
                         <conditions/>
                     </filter>
-                    <lifetime>30</lifetime>
+                    <lifetime>30d</lifetime>
                     <description>自动发现ES的节点。</description>
                     <item_prototypes>
                         <item_prototype>
                             <name>ES node {#NAME} : cpu core usage</name>
                             <type>7</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>es_node_monitor[{#NAME},cpu]</key>
-                            <delay>60</delay>
-                            <history>90</history>
-                            <trends>365</trends>
+                            <delay>1m</delay>
+                            <history>90d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -439,11 +426,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -455,27 +439,28 @@
                             <applications/>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
                             <application_prototypes>
                                 <application_prototype>
                                     <name>Elasticsearch Node {#NAME} status</name>
                                 </application_prototype>
                             </application_prototypes>
+                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>ES node {#NAME} : available disk space</name>
                             <type>7</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>es_node_monitor[{#NAME},disk.avail]</key>
-                            <delay>180</delay>
-                            <history>90</history>
-                            <trends>365</trends>
+                            <delay>3m</delay>
+                            <history>90d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>b</units>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -483,11 +468,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -499,27 +481,28 @@
                             <applications/>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
                             <application_prototypes>
                                 <application_prototype>
                                     <name>Elasticsearch Node {#NAME} status</name>
                                 </application_prototype>
                             </application_prototypes>
+                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>ES node {#NAME} : used fielddata cache</name>
                             <type>7</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>es_node_monitor[{#NAME},fielddata.memory_size]</key>
-                            <delay>60</delay>
-                            <history>90</history>
-                            <trends>365</trends>
+                            <delay>1m</delay>
+                            <history>90d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>b</units>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -527,11 +510,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -543,27 +523,28 @@
                             <applications/>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
                             <application_prototypes>
                                 <application_prototype>
                                     <name>Elasticsearch Node {#NAME} status</name>
                                 </application_prototype>
                             </application_prototypes>
+                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>ES node {#NAME} : used file descriptor ratio</name>
                             <type>7</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>es_node_monitor[{#NAME},file_desc.percent]</key>
-                            <delay>60</delay>
-                            <history>90</history>
-                            <trends>365</trends>
+                            <delay>1m</delay>
+                            <history>90d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
                             <units>%</units>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -571,11 +552,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -587,27 +565,28 @@
                             <applications/>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
                             <application_prototypes>
                                 <application_prototype>
                                     <name>Elasticsearch Node {#NAME} status</name>
                                 </application_prototype>
                             </application_prototypes>
+                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>ES node {#NAME} : java heap percent</name>
                             <type>7</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>es_node_monitor[{#NAME},heap.percent]</key>
-                            <delay>60</delay>
-                            <history>90</history>
-                            <trends>365</trends>
+                            <delay>1m</delay>
+                            <history>90d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
                             <units>%</units>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -615,11 +594,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -631,27 +607,28 @@
                             <applications/>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
                             <application_prototypes>
                                 <application_prototype>
                                     <name>Elasticsearch Node {#NAME} status</name>
                                 </application_prototype>
                             </application_prototypes>
+                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>ES node {#NAME} : number of failed indexing ops</name>
                             <type>7</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>es_node_monitor[{#NAME},indexing.index_failed]</key>
-                            <delay>60</delay>
-                            <history>90</history>
-                            <trends>365</trends>
+                            <delay>1m</delay>
+                            <history>90d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -659,11 +636,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -675,27 +649,28 @@
                             <applications/>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
                             <application_prototypes>
                                 <application_prototype>
                                     <name>Elasticsearch Node {#NAME} status</name>
                                 </application_prototype>
                             </application_prototypes>
+                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>ES node {#NAME} : 1m load average</name>
                             <type>7</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>es_node_monitor[{#NAME},load_1m]</key>
-                            <delay>60</delay>
-                            <history>90</history>
-                            <trends>365</trends>
+                            <delay>1m</delay>
+                            <history>90d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>0</value_type>
                             <allowed_hosts/>
                             <units/>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -703,11 +678,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -719,27 +691,28 @@
                             <applications/>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
                             <application_prototypes>
                                 <application_prototype>
                                     <name>Elasticsearch Node {#NAME} status</name>
                                 </application_prototype>
                             </application_prototypes>
+                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>ES node {#NAME} : number of current merges</name>
                             <type>7</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>es_node_monitor[{#NAME},merges.current]</key>
-                            <delay>60</delay>
-                            <history>90</history>
-                            <trends>365</trends>
+                            <delay>1m</delay>
+                            <history>90d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -747,11 +720,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -763,27 +733,28 @@
                             <applications/>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
                             <application_prototypes>
                                 <application_prototype>
                                     <name>Elasticsearch Node {#NAME} status</name>
                                 </application_prototype>
                             </application_prototypes>
+                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>ES node {#NAME} : used query cache</name>
                             <type>7</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>es_node_monitor[{#NAME},query_cache.memory_size]</key>
-                            <delay>60</delay>
-                            <history>90</history>
-                            <trends>365</trends>
+                            <delay>1m</delay>
+                            <history>90d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>b</units>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -791,11 +762,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -807,27 +775,28 @@
                             <applications/>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
                             <application_prototypes>
                                 <application_prototype>
                                     <name>Elasticsearch Node {#NAME} status</name>
                                 </application_prototype>
                             </application_prototypes>
+                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>ES node {#NAME} : used request cache</name>
                             <type>7</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>es_node_monitor[{#NAME},request_cache.memory_size]</key>
-                            <delay>60</delay>
-                            <history>90</history>
-                            <trends>365</trends>
+                            <delay>1m</delay>
+                            <history>90d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>b</units>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -835,11 +804,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -851,27 +817,28 @@
                             <applications/>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
                             <application_prototypes>
                                 <application_prototype>
                                     <name>Elasticsearch Node {#NAME} status</name>
                                 </application_prototype>
                             </application_prototypes>
+                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>ES node {#NAME} : current query phase ops</name>
                             <type>7</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>es_node_monitor[{#NAME},search.query_current]</key>
-                            <delay>60</delay>
-                            <history>90</history>
-                            <trends>365</trends>
+                            <delay>1m</delay>
+                            <history>90d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -879,11 +846,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -895,27 +859,28 @@
                             <applications/>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
                             <application_prototypes>
                                 <application_prototype>
                                     <name>Elasticsearch Node {#NAME} status</name>
                                 </application_prototype>
                             </application_prototypes>
+                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>ES node {#NAME} : open scroll contexts</name>
                             <type>7</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>es_node_monitor[{#NAME},search.scroll_current]</key>
-                            <delay>60</delay>
-                            <history>90</history>
-                            <trends>365</trends>
+                            <delay>1m</delay>
+                            <history>90d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -923,11 +888,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -939,27 +901,28 @@
                             <applications/>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
                             <application_prototypes>
                                 <application_prototype>
                                     <name>Elasticsearch Node {#NAME} status</name>
                                 </application_prototype>
                             </application_prototypes>
+                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>ES node {#NAME} : memory used by segments</name>
                             <type>7</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>es_node_monitor[{#NAME},segments.memory]</key>
-                            <delay>60</delay>
-                            <history>90</history>
-                            <trends>365</trends>
+                            <delay>1m</delay>
+                            <history>90d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units>b</units>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -967,11 +930,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -983,27 +943,28 @@
                             <applications/>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
                             <application_prototypes>
                                 <application_prototype>
                                     <name>Elasticsearch Node {#NAME} status</name>
                                 </application_prototype>
                             </application_prototypes>
+                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>ES node {#NAME} : number of current suggest ops</name>
                             <type>7</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>es_node_monitor[{#NAME},suggest.current]</key>
-                            <delay>60</delay>
-                            <history>90</history>
-                            <trends>365</trends>
+                            <delay>1m</delay>
+                            <history>90d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1011,11 +972,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -1027,27 +985,28 @@
                             <applications/>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
                             <application_prototypes>
                                 <application_prototype>
                                     <name>Elasticsearch Node {#NAME} status</name>
                                 </application_prototype>
                             </application_prototypes>
+                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>ES node {#NAME} : node uptime</name>
                             <type>7</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>es_node_monitor[{#NAME},uptime]</key>
-                            <delay>60</delay>
-                            <history>7</history>
+                            <delay>1m</delay>
+                            <history>1w</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1055,11 +1014,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -1071,27 +1027,28 @@
                             <applications/>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
                             <application_prototypes>
                                 <application_prototype>
                                     <name>Elasticsearch Node {#NAME} status</name>
                                 </application_prototype>
                             </application_prototypes>
+                            <master_item_prototype/>
                         </item_prototype>
                         <item_prototype>
                             <name>ES node {#NAME} : es version</name>
                             <type>7</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>es_node_monitor[{#NAME},version]</key>
-                            <delay>3000</delay>
-                            <history>7</history>
+                            <delay>50m</delay>
+                            <history>1w</history>
                             <trends>0</trends>
                             <status>0</status>
                             <value_type>4</value_type>
                             <allowed_hosts/>
                             <units/>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -1099,11 +1056,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -1115,11 +1069,14 @@
                             <applications/>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
                             <application_prototypes>
                                 <application_prototype>
                                     <name>Elasticsearch Node {#NAME} status</name>
                                 </application_prototype>
                             </application_prototypes>
+                            <master_item_prototype/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
@@ -1156,8 +1113,42 @@
                             <tags/>
                         </trigger_prototype>
                     </trigger_prototypes>
-                    <graph_prototypes/>
+                    <graph_prototypes>
+                        <graph_prototype>
+                            <name>ES nodes: 1m load average</name>
+                            <width>1200</width>
+                            <height>500</height>
+                            <yaxismin>0.0000</yaxismin>
+                            <yaxismax>0.0000</yaxismax>
+                            <show_work_period>1</show_work_period>
+                            <show_triggers>1</show_triggers>
+                            <type>0</type>
+                            <show_legend>1</show_legend>
+                            <show_3d>0</show_3d>
+                            <percent_left>0.0000</percent_left>
+                            <percent_right>0.0000</percent_right>
+                            <ymin_type_1>0</ymin_type_1>
+                            <ymax_type_1>1</ymax_type_1>
+                            <ymin_item_1>0</ymin_item_1>
+                            <ymax_item_1>0</ymax_item_1>
+                            <graph_items>
+                                <graph_item>
+                                    <sortorder>0</sortorder>
+                                    <drawtype>2</drawtype>
+                                    <color>1A7C11</color>
+                                    <yaxisside>0</yaxisside>
+                                    <calc_fnc>2</calc_fnc>
+                                    <type>0</type>
+                                    <item>
+                                        <host>Elasticsearch Cluster</host>
+                                        <key>es_node_monitor[{#NAME},load_1m]</key>
+                                    </item>
+                                </graph_item>
+                            </graph_items>
+                        </graph_prototype>
+                    </graph_prototypes>
                     <host_prototypes/>
+                    <jmx_endpoint/>
                 </discovery_rule>
             </discovery_rules>
             <httptests/>
@@ -1192,7 +1183,7 @@
             <correlation_tag/>
             <url/>
             <status>0</status>
-            <priority>4</priority>
+            <priority>5</priority>
             <description/>
             <type>0</type>
             <manual_close>0</manual_close>
@@ -1208,7 +1199,7 @@
             <correlation_tag/>
             <url/>
             <status>0</status>
-            <priority>3</priority>
+            <priority>4</priority>
             <description/>
             <type>0</type>
             <manual_close>0</manual_close>

@@ -9,7 +9,7 @@
 
 **install**
 
-1. Import zbx\_templates\_es\_cluster.xml to zabbix.
+1. Import zbx\_export\_templates.xml to zabbix.
 2. Copy elasticsearch_monitor directory to your zabbix agentd scripts path.
 3. Copy userparameter_elasticsearch.conf to your zabbix agentd etc path,
  and you may change the path to your right agentd scripts path.
@@ -21,3 +21,4 @@
 
 Author: vastxiao.github.io
 Date: 2017.04.11
+

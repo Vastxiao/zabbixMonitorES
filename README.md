@@ -19,11 +19,11 @@
 - zabbix3
 - bash
 - linux commands: curl, awk, grep, sort, uniq, sed ...
-- support es version 2.x 5.x
+- support es version 2.x 5.x+
 
 **安装指南**
 
-1. 将模板文件 zbx\_templates\_es\_cluster.xml 导入到zabbix.
+1. 将模板文件 zbx\_export\_templates.xml 导入到zabbix.
 2. 复制整个 elasticsearch_monitor 目录到任意一个ES节点的 zabbix agentd scripts 目录中(注意zabbix执行权限问题).
 3. 修改 es\_env.sh 的配置,指定es节点地址, 建议至少加两个以上节点的地址以防单个节点挂掉监控不到数据.
 4. 复制 userparameter_elasticsearch.conf 到 zabbix agentd etc, 注意修改对应的脚本路径.
@@ -34,6 +34,5 @@
 
 * Author: vastxiao.github.io
 * Date: 2017.04.11
-* Update: 2017.05.05
 * Repo: https://github.com/Vastxiao/zabbixMonitorES
 
